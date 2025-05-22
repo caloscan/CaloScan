@@ -97,7 +97,7 @@ def lambda_handler(event, context):
                     "Access-Control-Allow-Origin": "*"
                 },
                 "body": json.dumps({
-                    "success": true,
+                    "success": True,
                     "data": {
                         "barcodeValue": result['data'],
                         "barcodeType": result['type'],
@@ -116,7 +116,7 @@ def lambda_handler(event, context):
                     "Access-Control-Allow-Origin": "*"
                 },
                 "body": json.dumps({
-                    "success": false,
+                    "success": False,
                     "error": {
                         "code": "BARCODE_NOT_FOUND",
                         "message": "No barcode could be detected in the provided image"
